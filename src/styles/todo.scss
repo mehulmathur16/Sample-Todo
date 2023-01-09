@@ -1,0 +1,14 @@
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__todo {
+        display: flex;
+    }
+
+    &__delete-button {
+        display: flex;
+    }
+}
