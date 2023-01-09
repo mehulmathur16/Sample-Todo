@@ -1,0 +1,13 @@
+.todos-container {
+    &__header {
+        &__add-button {
+            padding: 0.4rem;
+            border-radius: 0.4rme;
+            border-radius: 0.4rem;
+            border: none;
+            color: white;
+            background: teal;
+            margin-left: 0.4rem;
+        }
+    }
+}

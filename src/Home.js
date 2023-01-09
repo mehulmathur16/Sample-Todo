@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 import Todo from './Todo';
+import './styles/home.scss'
 
 function Home() {
 
@@ -30,13 +31,13 @@ function Home() {
     }, []);
 
     return (
-        <>
-            <div>
+        <div className='todos-container'>
+            <div className='todos-container__header'>
                 <input onChange={(e) => {
                     setInput(e.target.value);
                 }}></input>
 
-                <button onClick={handleClick}>Add Todo</button>
+                <button onClick={handleClick} className='todos-container__header__add-button'>Add Todo</button>
             </div>
 
             {(allTodos) ? (
@@ -47,7 +48,7 @@ function Home() {
                 })
             ) :
                 null}
-        </>
+        </div>
     );
 }
 
